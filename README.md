@@ -88,7 +88,7 @@ It also ends with a line break.
 ```
 A multiline string can be indented to match the surrounding code. The whitespace before the closing quotation marks (`"""`) tells Swift what whitespace to ignore before all of the other lines. However, if you write whitespace at the beginning of a line in addition to what’s before the closing quotation marks, that whitespace is included.
 
-![Diagram](multilineStringWhitespace_2x.png)
+![Diagram](readme-images/multilineStringWhitespace_2x.png)
 
 In the example above, even though the entire multiline string literal is indented, the first and last lines in the string don’t begin with any whitespace. The middle line has more indentation than the closing quotation marks, so it starts with that extra four-space indentation.
 
@@ -471,7 +471,7 @@ Like strings, each substring has a region of memory where the characters that ma
 
 In the example above, `greeting` is a string, which means it has a region of memory where the characters that make up the string are stored. Because beginning is a substring of `greeting`, it reuses the memory that `greeting` uses. In contrast, `newString` is a string—when it’s created from the substring, it has its own storage. The figure below shows these relationships:
 
-![Diagram](stringSubstring_2x.png)
+![Diagram](readme-images/stringSubstring_2x.png)
 
 >Note
 >
@@ -608,7 +608,7 @@ let dogString = "Dog‼🐶"
 
 You can access a UTF-8 representation of a `String` by iterating over its `utf8` property. This property is of type `String.UTF8View`, which is a collection of unsigned 8-bit (`UInt8`) values, one for each byte in the string’s UTF-8 representation:
 
-![Diagram](UTF8_2x.png)
+![Diagram](readme-images/UTF8_2x.png)
 
 ```Swift
 for codeUnit in dogString.utf8 {
@@ -624,7 +624,7 @@ In the example above, the first three decimal codeUnit values (68, 111, 103) rep
 
 You can access a UTF-16 representation of a `String` by iterating over its `utf16` property. This property is of type `String.UTF16View`, which is a collection of unsigned 16-bit (`UInt16`) values, one for each 16-bit code unit in the string’s UTF-16 representation:
 
-![Diagram](UTF16_2x.png)
+![Diagram](readme-images/UTF16_2x.png)
 
 ```Swift
 for codeUnit in dogString.utf16 {
@@ -646,7 +646,7 @@ You can access a Unicode scalar representation of a `String` value by iterating 
 
 Each `UnicodeScalar` has a `value` property that returns the scalar’s 21-bit value, represented within a `UInt32` value:
 
-![Diagram](UnicodeScalar_2x.png)
+![Diagram](readme-images/UnicodeScalar_2x.png)
 
 ```Swift
 for scalar in dogString.unicodeScalars {
