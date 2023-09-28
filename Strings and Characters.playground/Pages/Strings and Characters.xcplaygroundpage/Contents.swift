@@ -1,6 +1,7 @@
 //: ![Swift](swift-logo.png)
-//: Swift v5.7 [official docs](https://docs.swift.org/swift-book/LanguageGuide/StringsAndCharacters.html)
-//: # 3. Strings and Characters
+//: Swift v5.7 | [Swift.org](https://docs.swift.org) | [The official Swift Language Guide](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics)
+//:
+//: # Page 3. Strings and Characters
 //:
 //:
 //: A string is a series of characters, such as `"hello, world"` or `"albatross"`. Swift strings are represented by the String type. The contents of a `String` can be accessed in various ways, including as a collection of `Character` values.
